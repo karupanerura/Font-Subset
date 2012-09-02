@@ -26,6 +26,9 @@ use inc::Module::Install;
 
 all_from 'lib/Font/Subset.pm';
 
+requires 'Encode';
+requires 'Font::TTF';
+requires 'Class::Accessor::Lite';
 
 test_requires 'Test::More'     => '0.88';
 test_requires 'Test::Requires' => '0.06';
